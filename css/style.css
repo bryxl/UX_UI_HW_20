@@ -8,43 +8,48 @@
 /* CSS Document */
 
 html {
-	background-color: black;
 	scroll-behavior: smooth;
 }
 
+body {
+	background-color: black;
+}
+
 h1 {
-	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
-	font-size: 86px;
-	color: white;
-}
-
-h2 {
-	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
-	font-size: 80px;
-	color: white;
-}
-
-h3 {
 	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 	font-size: 72px;
 	color: white;
 }
 
-h4 {
+h2 {
 	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 	font-size: 64px;
 	color: white;
 }
 
+h3 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 54px;
+	color: white;
+}
+
+h4 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 42px;
+	color: white;
+}
+
 h5 {
 	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 h6 {
 	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
-	font-size: 32px;
+	font-size: 24px;
 	color: white;
 }
 
@@ -138,15 +143,53 @@ img {
 /* Recent Work */
 
 .recent-work {
-	background-color: black;
 	padding: 10px;
-	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
-.recent-images {
-	grid-row: 1fr 1fr 1fr;
+.recent-work h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.recent-work-image1 {
+	padding: 80px;
+	border: solid 2px white;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image1 img {
+	padding-top: 80px;
+}
+
+.recent-work-image2 {
+	padding: 80px;
+	padding-bottom: 0;
+	border: solid 2px white;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image2 img {
+	display: block;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.recent-work-image3 {
+	padding: 80px;
+	padding-bottom: 0;
+	border: solid 2px white;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image3 img {
+	display: block;
+	margin: auto;
+	padding-top: 80px;
 }
 
 .hideme {
@@ -208,83 +251,118 @@ img {
 	color: 	#FF21D8 !important;
 }
 
+.workContainerSite {
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: 40px;
+	margin: 10px;
+}
 
-.uxWork {
-	padding: 10px;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-template-areas: 
-		"image1"
-		"image2"
-		"image3"
-		"image4"
-	;
-	grid-gap: 20px;
+.workContainerMobile {
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: 40px;
+	padding-bottom: 0px;
+	margin: 10px;
 }
 
 .image1 {
-	grid-area: image1;
-	background-image: url(../images/blindCat_resized.png);
-	background-position: center center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	cursor: pointer;
-	width: 100%;
-	height: auto;
-	border: 2px solid white;
-	border-radius: 15px;
-	padding-bottom: 69%;
+	padding: 150px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .image2 {
-	grid-area: image2;
-	background-image: url(../images/lifeable.png);
-	background-position: bottom center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	cursor: pointer;
-	width: 100%;
-	height: auto;
-	border: 2px solid white;
-	border-radius: 15px;
-	padding-bottom: 69%;
+	display: block;
+	margin: auto;
+	padding: 150px;
+	padding-bottom: 0px;
+	padding-top: 20px;
 }
 
 .image3 {
-	grid-area: image3;
-	background-image: url(../images/huddle.png);
-	background-position: bottom center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: auto;
-	border: 2px solid white;
-	border-radius: 15px;
-	cursor: pointer;
-	padding-bottom: 69%;
+	display: block;
+	margin: auto;
+	padding: 150px;
+	padding-bottom: 0px;
+	padding-top: 20px;
 }
 
 .image4 {
-	grid-area: image4;
-	background-image: url(../images/omnibus_resized.png);
-	background-position: center center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: auto;
-	border: 2px solid white;
+	display: block;
+	margin: auto;
+	padding: 150px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.cs-hero {
+	padding: 40px;
+}
+
+.case-study-hero {
+	padding: 40px;
+	padding-bottom: 0px;
+	border: solid 2px white;
 	border-radius: 15px;
-	cursor: pointer;
-
 }
 
-.hiddenText {
+.case-study-blurb {
 	position: relative;
-	top: 50px;
-	left: 50px;
+	top: 200px;
 }
 
+.cs-hero-img-holder {
+	position: relative;
+	left: 1000px;
+	bottom: 150px;
+}
+
+.case-study {
+	padding: 60px;
+}
+
+.team {
+	position: relative;
+	left: 600px;
+	top: 10px;
+
+}
+
+.blindCat-new-hp {
+	text-align: center;
+	display: block;
+	margin: auto;
+	max-height: 3000px;
+	padding-top: 150px;
+}
+
+figcaption {
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-bottom: 100px;
+}
+
+.research {
+	padding-top: 80px;
+}
+
+.case-study img {
+	text-align: center;
+	margin: auto;
+	display: block;
+	border-radius: 15px;
+}
+
+.problemStatement {
+	border: solid 2px white;
+	border-radius: 10px;
+	padding: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
 /* About Me */
 
@@ -484,9 +562,47 @@ p .footer {
 }
 
 @media only screen and (max-width: 600px) {
+
 	.hero-image-blurb h1 {
-		font-size: 40px;
+		font-size: 34px;
 	}
+
+	/* Work */
+	
+	.workContainerSite {
+		padding: 0px;
+		margin: 10px;
+	}
+			
+			.workContainerMobile {
+				padding: 0px;
+				margin: 10px;
+				padding-bottom: 0px;
+			}
+			
+			.image1 {
+				padding: 5px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+			}
+			
+			.image2 {
+				padding: 5px;
+				padding-bottom: 0px;
+				padding-top: 5px;
+			}
+			
+			.image3 {
+				padding: 5px;
+				padding-bottom: 0px;
+				padding-top: 5px;
+			}
+			
+			.image4 {
+				padding: 5px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+			}
 
 }
 
@@ -535,6 +651,42 @@ p .footer {
 	.hiddenText h3 {
 		font-size: 50px;
 	}
+
+		/* Work */
+	
+		.workContainerSite {
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		.workContainerMobile {
+			padding: 10px;
+			padding-bottom: 0px;
+		}
+		
+		.image1 {
+			padding: 20px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+		
+		.image2 {
+			padding: 20px;
+			padding-bottom: 0px;
+			padding-top: 20px;
+		}
+		
+		.image3 {
+			padding: 20px;
+			padding-bottom: 0px;
+			padding-top: 20px;
+		}
+		
+		.image4 {
+			padding: 20px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
 }
 
 @media only screen and (max-width: 992px) {
@@ -566,4 +718,150 @@ p .footer {
 		width: 100%;
 	}
 
+	h1 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 64px;
+		color: white;
+	}
+	
+	h2 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 52px;
+		color: white;
+	}
+	
+	h3 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 42px;
+	}
+	
+	h4 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 32px;
+		color: white;
+	}
+	
+	h5 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 28px;
+		color: white;
+	}
+	
+	h6 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 24px;
+		color: white;
+	}
+	
+	p {
+		font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 18px;
+		color: white;
+	}
+	
+	a {
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		color: white;
+		text-decoration-style: none;
+	}
+
+	/* Recent Work */
+
+.recent-work-image1 {
+	padding: 50px;
+	margin-bottom: 20px;
 }
+
+.recent-work-image1 img {
+	padding-top: 20px;
+}
+
+.recent-work-image2 {
+	padding: 50px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.recent-work-image2 img {
+	padding-top: 20px;
+}
+
+.recent-work-image3 {
+	padding: 50px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.recent-work-image3 img {
+	padding-top: 20px;
+}
+
+	/* Work */
+
+	.workContainerSite {
+		padding: 30px;
+		margin: 10px;
+	}
+	
+	.workContainerMobile {
+		padding: 30px;
+		padding-bottom: 0px;
+	}
+	
+	.image1 {
+		padding: 100px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	
+	.image2 {
+		padding: 100px;
+		padding-bottom: 0px;
+		padding-top: 20px;
+	}
+	
+	.image3 {
+		padding: 100px;
+		padding-bottom: 0px;
+		padding-top: 20px;
+	}
+	
+	.image4 {
+		padding: 100px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.case-study-hero {
+		padding: 40px;
+		padding-bottom: 0px;
+		border: solid 2px white;
+		border-radius: 15px;
+	}
+	
+	/* Case Study */
+
+	.case-study-blurb {
+		position: none;
+		top: 0;
+	}
+	
+	.cs-hero-img-holder {
+		position: none;
+		left: 0;
+		bottom: 0px;
+	}
+	
+	.case-study {
+		padding: 60px;
+	}
+	
+	.team {
+		position: relative;
+		left: 500px;
+	
+	}
+
+}
+
+
