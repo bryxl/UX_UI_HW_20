@@ -324,7 +324,7 @@ img {
 
 .team {
 	position: relative;
-	left: 600px;
+	left: 100px;
 	top: 10px;
 
 }
@@ -363,6 +363,13 @@ figcaption {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+.case-study li {
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+}
+
 
 /* About Me */
 
